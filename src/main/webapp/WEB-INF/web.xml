@@ -32,6 +32,7 @@
 		<url-pattern>/</url-pattern>
 	</filter-mapping>
 	
+	<!-- 스프링 context 설정  -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:spring/context-*.xml</param-value>
