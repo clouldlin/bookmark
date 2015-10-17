@@ -7,6 +7,6 @@
 <title>Bookmark</title>
 </head>
 <body>
-안녕하세요!
+안녕하세요! 메인입니다.
 </body>
 </html>
