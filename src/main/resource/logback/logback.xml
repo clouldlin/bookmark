@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<property name="LOG_HOME" value="C:/logs/bookmark" />
+   
+   	<!-- log 파일 저장경로  -->
+	<if condition='p("spring.profiles.active").equals("production")'>
+	    <then>
+	    	<property name="LOG_HOME" value="C:/logs/bookmark/production" />
+		</then>
+		<else>
+		    <property name="LOG_HOME" value="C:/logs/bookmark/dev" />
+        </else>
+	</if>
+	    
 	<property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger[%method:%line] - %msg%n" />
 	
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -9,7 +19,7 @@
 			<fileNamePattern>${LOG_HOME}/bookmark-web-app.log.%d{yyyy-MM-dd}.log
 			</fileNamePattern>
 			<!-- keep 30 days' worth of history -->
-			<maxHistory>30</maxHistory>
+			<!-- <maxHistory>30</maxHistory> -->
 		</rollingPolicy>
 		<encoder>
 			<pattern>${LOG_PATTERN}</pattern>

@@ -3,6 +3,8 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource-dev"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource-stage"/>
         <property name="context-root" value="bookmark"/>
         <property name="java-output-path" value="/bookmark/build/classes"/>
     </wb-module>

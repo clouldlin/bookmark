@@ -2,6 +2,16 @@
 <!-- 30초마다 설정 파일의 변경을 확인한다. 파일이 변경되면 다시 로딩한다 -->
 <configuration scan="true" scanPeriod="30 seconds">
 
+    <if condition='p("spring.profiles.active").equals("dev")'>
+		<then><property name="LOG_LEVEL" value="DEBUG" /></then>
+	</if>
+	<if condition='p("spring.profiles.active").equals("rc")'>
+	    <then><property name="LOG_LEVEL" value="INFO" /></then>
+	</if>
+	<if condition='p("spring.profiles.active").equals("live")'>
+		<then><property name="LOG_LEVEL" value="INFO" /></then>
+	</if>
+    
 	<!-- 외부 설정파일을 사용할 수 있다. -->
 	<property resource="resource.properties" />
 
