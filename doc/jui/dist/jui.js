@@ -175,7 +175,7 @@
 				return keys.join(".");
 			}
 		}
-	}
+	};
 
 	/**
 	 * Private Static Classes

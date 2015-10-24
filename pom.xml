@@ -6,6 +6,7 @@
   <packaging>war</packaging>
   
   <build>
+  	<finalName>bookmark</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -23,7 +24,15 @@
   </properties>
   
   <dependencies>
-  <!-- springframework 설정  -->
+	
+	<dependency>
+		<groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.0.1</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- springframework 설정  -->
   	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-context</artifactId>
