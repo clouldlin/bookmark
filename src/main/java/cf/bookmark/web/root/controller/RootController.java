@@ -15,7 +15,7 @@ public class RootController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String root(HttpServletRequest request){
-		logger.info("info"); 
+		logger.info("info");  
 		return "index";
 	}
 	
