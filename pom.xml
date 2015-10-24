@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   
   <build>
-  	<finalName>bookmark</finalName>
+  	<finalName>Root</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
