@@ -8,10 +8,10 @@
 <title>Bookmark</title>
 <meta name="description" content="Bookmark">
 <link rel="shortcut icon" href="/favicon.ico">
-<!-- <link rel="stylesheet" media="screen" href="css 주소"> -->
-<script type="text/javascript" src="/bookmark/js/j$.js?v=20151021a"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/bookmark.js?v=20151021a"></script>
 </head>
 <body>
-안녕하세요! 메인입니다.
+안녕하세요! 메인입니다. 지금은 서버기반 설정중입니다. 
+<br />조금만 기다려 주세요...
 </body>
 </html>
