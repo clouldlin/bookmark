@@ -8,8 +8,8 @@
 <title>Bookmark</title>
 <meta name="description" content="Bookmark">
 <link rel="shortcut icon" href="/favicon.ico">
-<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/mark.css?v=20151025b"/>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/mark.js?v=20151025b"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/mark.css?v=201510252"/>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/mark.js?v=201510252"></script>
 </head>
 <body class="mark">
 안녕하세요! 메인입니다. 
