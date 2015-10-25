@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="bookmark">
+
+        <properties>
+
+            <!-- 필수 속성 -->
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="javax.persistence.jdbc.user" value="bookmark"/>
+            <property name="javax.persistence.jdbc.password" value="bookmark#1234"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;DatabaseName=bookmark"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect" />
+
+            <!-- 옵션 -->
+            <!-- 콘솔에 실행되는 테이블 생성 ddl을 출력  -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.use_sql_comments" value="true" />
+            <!-- 최적화 전략 사용  -->
+            <property name="hibernate.id.new_generator_mappings" value="true" />
+
+            <!-- DDL 생성 : 직접 DDL을 만든다면 사용할 이유가 없다. -->
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            
+            <!-- 아래 속성을 사용시 언더바, 사용하지 않으면 칼럼은 카멜형식으로  -->
+           <!--  <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy" /> -->
+            <!--    -->
+            
+            <!--
+            	- create 		: 기존 테이블을 삭제하고 새로 생성 : DROP + CREATE (개발)
+            	- create-drop 	: 애플리케이션 종료시 생성한 ddl을 제거 (개발)
+            	- update		: 데이터베이스 테이블과 엔티티 매핑정보를 비교해서 변경사항만 수정 (개발)
+            	- validae		: 데이터베이스 테이블과 엔티티 매핑정보를 비교해서 차이가 있으면 경고를 남기고 애플리케이션을 실행하지 않음 (운영)
+            	- none			: no-use (운영)
+             -->
+            
+        </properties>
+    </persistence-unit>
+
+</persistence>

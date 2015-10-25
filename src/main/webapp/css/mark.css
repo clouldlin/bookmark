@@ -1,0 +1,41 @@
+.mark {}
+
+.mark label,
+.mark input,
+.mark button,
+.mark select,
+.mark textarea {
+  font-weight: normal;
+}
+
+.mark select,
+.mark button,
+.mark input[type="button"],
+.mark input[type="reset"],
+.mark input[type="submit"],
+.mark input[type="radio"],
+.mark input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.mark button,
+.mark html input[type="button"],
+.mark input[type="reset"],
+.mark input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+.mark button,
+.mark input {
+  line-height: normal;
+}
+
+.mark button,
+.mark input,
+.mark select,
+.mark textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}

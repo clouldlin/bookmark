@@ -20,6 +20,7 @@
 
   <properties>
   	<spring.maven.artifact.version>4.2.1.RELEASE</spring.maven.artifact.version>
+  	<hibernate.version>4.3.10.Final</hibernate.version>
   </properties>
   
   <dependencies>
@@ -120,6 +121,21 @@
 		<version>4.12</version>
 		<scope>test</scope>
 	</dependency>
+	
+	<!-- mvn install:install-file -Dfile=D:\sqljdbc4.jar -Dpackaging=jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -->
+	<dependency>
+	    <groupId>com.microsoft.sqlserver</groupId>
+	    <artifactId>sqljdbc4</artifactId>
+	    <version>4.0</version>
+	</dependency>
+	
+	<!-- JPA, 하이버네이트 -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>${hibernate.version}</version>
+	</dependency>
+	
 	
   </dependencies>
 </project>
